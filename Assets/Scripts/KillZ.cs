@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class KillZ : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public bool isGoal = false;
+    public float resetDelay = 5;
 
-    // Update is called once per frame
-    void Update()
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        Ball Pball = other.gameObject.GetComponent<Ball>();
+        if (Pball != null)
+        {
+            if (isGoal)
+            {
+                GameManager.self.EndGame();
+            }
+            Pball.Reset(resetDelay);
+        }
     }
 }

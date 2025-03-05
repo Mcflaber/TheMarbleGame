@@ -14,7 +14,7 @@ public class KillZ : MonoBehaviour
         {
             if (isGoal)
             {
-                GameManager.self.EndGame();
+                GameManager.self.GameOver();
             }
             Pball.Reset(resetDelay);
         }

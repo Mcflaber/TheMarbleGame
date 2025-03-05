@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public Vector3 accelerationData = Vector3.zero;
     public TextMeshProUGUI AccelDataField;
     public TextMeshProUGUI ScoreField;
+    public TextMeshProUGUI FinalScoreField;
     public float ballForce = 10;
     public float Score = 0;
     Accelerometer accel;
@@ -63,15 +64,21 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         gameOverScreen.SetActive(false);
-        SceneManager.LoadScene("Maze");
+        SceneManager.LoadScene("MarbleGame");
     }
-    public void EndGame()
+    public void GameOver()
     {
         gameOverScreen.SetActive(true);
     }
+    public void EndGame()
+    {
+        Application.Quit();
+    }
+
     public void AddScore(float points)
     {
         Score += points;
         ScoreField.text = Score.ToString();
+        FinalScoreField.text = Score.ToString();
     }
 }

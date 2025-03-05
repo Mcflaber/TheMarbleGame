@@ -14,9 +14,16 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerPosition = player.gameObject.transform.position;
-        playerPosition.y = 10;
+        getBallPosition();
+
+
         cam.transform.position = playerPosition;
 
+    }
+    public void getBallPosition()
+    {
+        playerPosition.x = player.transform.position.x;
+        playerPosition.z = player.transform.position.z;
+        playerPosition.y = 10;
     }
 }

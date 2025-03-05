@@ -16,7 +16,7 @@ public class Point : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        GameManager.addScore(points);
+        GameManager.self.AddScore(points);
         Destroy(gameObject);
     }
 }

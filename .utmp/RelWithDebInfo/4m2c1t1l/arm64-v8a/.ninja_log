@@ -1,0 +1,12 @@
+# ninja log v5
+41	376	7629124620620164	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	decae6cd049368f4
+378	548	7629124622378181	C:/working/Daniel Ramirez/TheMarbleGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4m2c1t1l/obj/arm64-v8a/libswappywrapper.so	9822db2855b73687
+12	1202	7629124628799222	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	fcfbb110fe53f71d
+1	1223	7629124629037257	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	f3e07916e99f709e
+24	1239	7629124629200535	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	c3b28511bc00394d
+30	1319	7629124630016613	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e7cd45e8639b67f4
+16	1324	7629124630062046	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	67a564a13993d56d
+6	1406	7629124630889175	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	d063dfbbab1798c1
+20	1573	7629124632553129	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	10bd62a0528b3108
+9	1701	7629124633808248	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	61e50959a4e5e010
+1702	1805	7629124634933330	C:/working/Daniel Ramirez/TheMarbleGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4m2c1t1l/obj/arm64-v8a/libgame.so	8ef1ee672a803bb0

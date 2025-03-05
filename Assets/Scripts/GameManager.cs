@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static MazeManager self;
-    public MazeBall ball;
+    public static GameManager self;
+    public Ball ball;
     public Vector3 accelerationData = Vector3.zero;
     public TextMeshProUGUI AccelDataField;
+    public TextMeshProUGUI ScoreField;
     public float ballForce = 10;
+    public float Score = 0;
     Accelerometer accel;
     public GameObject gameOverScreen;
-    bool northButton = false;
+
     protected void OnEnable()
     {
         // All sensors start out disabled so they have to manually be enabled first.
@@ -66,5 +68,10 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         gameOverScreen.SetActive(true);
+    }
+    public void AddScore(float points)
+    {
+        Score += points;
+        ScoreField.text = Score.ToString();
     }
 }

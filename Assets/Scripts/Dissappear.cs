@@ -18,30 +18,25 @@ public class Dissappear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isOnPlat == true)
+        if (isOnPlat == true)
         {
             Timer -= Time.deltaTime;
-
-
+            if (Timer <= 0)
+            {
+                Platform.SetActive(false);
+                isOnPlat = false;
+            }
         }
-        if (Timer <= 0)
-        {
-
-            Platform.SetActive(false);
-
-
-
-            Timer2 -= Time.deltaTime;
-        }
-        if (Timer2 == 0)
+        if(Timer <= 0)
         {
             Timer2 -= Time.deltaTime;
-            if (Timer2 <= 0)
+            if(Timer2 <= 0)
             {
                 Platform.SetActive(true);
-
                 Timer = time;
+                Timer2 = time;
             }
+
         }
 
     }
@@ -50,7 +45,6 @@ public class Dissappear : MonoBehaviour
         Ball pball = other.GetComponent<Ball>();
         if (pball != null)
         {
-
             isOnPlat = true;
         }
 

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI ScoreField;
     public TextMeshProUGUI FinalScoreField;
     public float ballForce = 10;
+    public float gravity = 5;
     public float Score = 0;
     Accelerometer accel;
     public GameObject gameOverScreen;
@@ -48,7 +49,7 @@ public class GameManager : MonoBehaviour
 
         Vector3 direction = Vector3.zero;
         direction.x = accelerationData.x;
-        direction.y = 0;
+        direction.y -= gravity;
         direction.z = accelerationData.y;
 
         Pushball(direction);
@@ -81,4 +82,9 @@ public class GameManager : MonoBehaviour
         ScoreField.text = Score.ToString();
         FinalScoreField.text = Score.ToString();
     }
+    public void Level1()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
 }

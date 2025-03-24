@@ -67,10 +67,6 @@ public class GameManager : MonoBehaviour
 
         ball.rb.linearVelocity = direction;
     }
-    public void gravityForce()
-    {
-        //ball.rb.linearVelocity = velocity.y;
-    }
 
     public void StartGame()
     {

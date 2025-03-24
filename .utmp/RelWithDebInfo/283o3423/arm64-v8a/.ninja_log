@@ -1,12 +1,12 @@
 # ninja log v5
-78	531	7633767899033915	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	1a7bf35d7e4bc9c6
-532	806	7633767901935022	D:/unity/working/TheMarbleGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/283o3423/obj/arm64-v8a/libswappywrapper.so	2ee04b6c209381a5
-32	1493	7633767908438190	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	a5a00cb554286c9b
-71	1511	7633767908661765	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	e610b1f80515225b
-12	1519	7633767908513422	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	24397b7a150e775d
-42	1568	7633767909449712	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	d30438530fd74f4d
-24	1612	7633767909911416	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	88e187ccfdd3dc1a
-0	1633	7633767910138344	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	583a6bbe6556fd68
-17	1733	7633767911163774	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	3758557670557901
-7	1856	7633767912376025	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8d3ae0bc080c64e3
-1856	1955	7633767913432898	D:/unity/working/TheMarbleGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/283o3423/obj/arm64-v8a/libgame.so	80c4dfd55a4606bb
+38	275	7644865934626923	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	1a7bf35d7e4bc9c6
+276	520	7644865937094906	D:/unity/working/TheMarbleGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/283o3423/obj/arm64-v8a/libswappywrapper.so	2ee04b6c209381a5
+18	1013	7644865941962473	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	a5a00cb554286c9b
+9	1030	7644865942153935	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	24397b7a150e775d
+27	1046	7644865942309986	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	e610b1f80515225b
+32	1101	7644865942848703	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	d30438530fd74f4d
+22	1112	7644865942976516	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	88e187ccfdd3dc1a
+5	1158	7644865943427909	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	583a6bbe6556fd68
+13	1256	7644865944451088	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	3758557670557901
+1	1337	7644865945249783	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8d3ae0bc080c64e3
+1337	1481	7644865946723079	D:/unity/working/TheMarbleGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/283o3423/obj/arm64-v8a/libgame.so	80c4dfd55a4606bb

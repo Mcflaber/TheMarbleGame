@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public Ball ball;
     public Vector3 accelerationData = Vector3.zero;
     public TextMeshProUGUI AccelDataField;
+    public TextMeshProUGUI VelDataField;
     public TextMeshProUGUI ScoreField;
     public TextMeshProUGUI FinalScoreField;
     public float ballForce = 10;
@@ -16,7 +17,8 @@ public class GameManager : MonoBehaviour
     public float Score = 0;
     Accelerometer accel;
     public GameObject gameOverScreen;
-
+    public Vector3 velocity = Vector3.zero;
+    
     protected void OnEnable()
     {
         // All sensors start out disabled so they have to manually be enabled first.
@@ -47,21 +49,29 @@ public class GameManager : MonoBehaviour
         }
         AccelDataField.text = accelerationData.ToString();
 
+        velocity = ball.rb.linearVelocity;
+
+        VelDataField.text = velocity.ToString();
+
         Vector3 direction = Vector3.zero;
-        direction.x = accelerationData.x;
-        direction.y -= gravity;
-        direction.z = accelerationData.y;
-
+        direction.x = accelerationData.x * ballForce;
+        direction.y = velocity.y;
+        direction.z = accelerationData.y * ballForce;
+        
         Pushball(direction);
-
 
 
     }
     public void Pushball(Vector3 direction)
     {
 
-        ball.rb.linearVelocity = direction * ballForce;
+        ball.rb.linearVelocity = direction;
     }
+    public void gravityForce()
+    {
+        //ball.rb.linearVelocity = velocity.y;
+    }
+
     public void StartGame()
     {
         gameOverScreen.SetActive(false);
@@ -71,7 +81,7 @@ public class GameManager : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
     }
-    public void EndGame()
+    public void ExitGame()
     {
         Application.Quit();
     }
@@ -86,5 +96,8 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level 1");
     }
-
+    public void Level2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
 }

@@ -5,6 +5,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     public float PropellSpeed = 0;
     public bool isOn;
+    Ball player;
+    public Vector3 direction = Vector3.zero;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,16 +20,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Ball pball = other.GetComponent<Ball>();
-        if (pball != null)
-        {
-            propel();
-
-        }
+        GameManager.self.Pushball(direction);
+   
 
     }
     public void propel()
     {
-        GameManager.self.ballForce = GameManager.self.ballForce * PropellSpeed;
+
     }
 }

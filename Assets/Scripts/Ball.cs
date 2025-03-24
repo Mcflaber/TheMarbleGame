@@ -12,6 +12,8 @@ public class Ball : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody>();
 
+
+
         startingLocation = gameObject.transform.position;
         startingRotation = gameObject.transform.rotation;
     }

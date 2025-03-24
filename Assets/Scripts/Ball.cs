@@ -6,7 +6,6 @@ public class Ball : MonoBehaviour
 
     Vector3 startingLocation = Vector3.zero;
     Quaternion startingRotation = Quaternion.identity;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,7 +23,8 @@ public class Ball : MonoBehaviour
 
     }
     public void Reset(float resetTime = 0)
-    {
+    {   
+        
         gameObject.transform.position = startingLocation;
         gameObject.transform.rotation = startingRotation;
         Debug.Log("ball reset");

@@ -67,7 +67,11 @@ public class GameManager : MonoBehaviour
 
         ball.rb.linearVelocity = direction;
     }
+    public void Pushball2(Vector3 direction, float mult)
+    {
 
+        ball.rb.linearVelocity = direction * mult;
+    }
     public void StartGame()
     {
         gameOverScreen.SetActive(false);
